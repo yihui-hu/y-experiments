@@ -1,16 +1,208 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: #2e2e2e;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  letter-spacing: -0.3px;
 }
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: transparent;
+    margin: 10px;
+  }
+  
+  .box {
+    display: grid;
+    flex: 0 1 auto;
+    padding: 10px;
+    width: 100vw;
+    height: 100vw;
+    background-color: white;
+  }
+
+  /* header box */
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 100vw;
+    padding: 2px;
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .desc {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  /* footer box */
+
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 100vw;
+    height: 30vh;
+    padding: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    background-color: transparent;
+    margin: 20px;
+  }
+  
+  .box {
+    display: grid;
+    flex: 0 1 auto;
+    padding: 20px;
+    width: calc((100vw - 46px) / 4);
+    height: calc((100vw - 46px) / 4);
+    background-color: white;
+  }
+
+  /* header box */
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: calc((100vw - 46px) / 4);
+    height: calc((100vw - 46px) / 4);
+    padding: 0px 15px 15px 0px;
+  }
+
+  .title {
+    font-size: 3.8vw;
+    line-height: 1;
+  }
+
+  .desc {
+    font-size: 1.5vw;
+    line-height: 1.2;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    line-height: 1.2;
+  }
+
+  /* footer box */
+
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: calc((100vw - 46px) / 4);
+    height: calc((100vw - 46px) / 4);
+    padding: 15px 0px 0px 15px;
+  }
+}
+
+/* styling */
+
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  color: gray;
 }
