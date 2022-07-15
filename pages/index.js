@@ -13,15 +13,15 @@ function Main(props) {
           Miscellaneous design / type / anything-goes work.
         </div>
         <div className="links">
-          <a href="mailto: yyihui.hu@gmail.com" target="_blank">
+          <a href="mailto: yyihui.hu@gmail.com" target="_blank" rel="noreferrer">
             Email
           </a>
           <div>/</div>
-          <a href="https://twitter.com/_yihui" target="_blank">
+          <a href="https://twitter.com/_yihui" target="_blank" rel="noreferrer">
             Twitter
           </a>
           <div>/</div>
-          <a href="https://yhhu.design" target="_blank">
+          <a href="https://yhhu.design" target="_blank" rel="noreferrer">
             Main Site
           </a>
         </div>
