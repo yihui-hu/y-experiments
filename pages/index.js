@@ -1,6 +1,4 @@
-import Image from "next/image";
 import ImageBox from "../components/ImageBox"
-import { motion } from "framer-motion";
 
 function Main(props) {
   let works = props.works;
@@ -28,21 +26,7 @@ function Main(props) {
       </div>
       {works.map((work, i) => {
         return (
-          <motion.div
-            className="box"
-            initial={{ y: "30px", opacity: 0 }}
-            animate={{ y: "0px", opacity: 1 }}
-            transition={{ duration: 0.7, type: "spring", delay: i * 0.1 }}
-          >
-            <Image
-              alt={work.image}
-              src={work.image}
-              width={work.width}
-              height={work.height}
-              layout="intrinsic"
-              objectFit="contain"
-            />
-          </motion.div>
+          <ImageBox key={i} work={work} delay={i}/>
         );
       })}
       <div className="footer-box">
