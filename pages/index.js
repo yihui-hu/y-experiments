@@ -5,10 +5,16 @@ import yexperience from "../public/yexperience.svg"
 import logo from "../public/experiments.svg"
 import logoEnd from "../public/experiments-end.svg"
 
+import Head from 'next/head'
+
 function Main(props) {
   let works = props.works;
 
   return (
+    <>
+    <Head>
+      <title>yexperiments</title>
+    </Head>
     <div className="container">
       <div className="header-box">
         <Image src={yexperiments} />
@@ -45,6 +51,7 @@ function Main(props) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
