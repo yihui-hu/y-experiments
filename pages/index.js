@@ -1,4 +1,6 @@
 import ImageBox from "../components/ImageBox"
+import Image from "next/image"
+import logo from "../public/experiments.svg"
 
 function Main(props) {
   let works = props.works;
@@ -6,10 +8,8 @@ function Main(props) {
   return (
     <div className="container">
       <div className="header-box">
-        <div className="title">Experiments, Everywhere, All At Once</div>
-        <div className="desc">
-          Miscellaneous design / type / anything-goes work.
-        </div>
+        <div className="title">Experiments</div>
+        <Image src={logo} />
         <div className="links">
           <a href="mailto: yyihui.hu@gmail.com" target="_blank" rel="noreferrer">
             Email
@@ -24,13 +24,16 @@ function Main(props) {
           </a>
         </div>
       </div>
+      {/* <div className="logo-box">
+        <Image src={logo} />
+      </div> */}
       {works.map((work, i) => {
         return (
           <ImageBox key={i} work={work} delay={i}/>
         );
       })}
       <div className="footer-box">
-        <div className="title">End of Everything, All At Once</div>
+        <div className="title">End of Experiments</div>
         <div className="desc">
           More works coming soon.
         </div>
