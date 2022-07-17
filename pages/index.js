@@ -1,5 +1,7 @@
 import ImageBox from "../components/ImageBox"
 import Image from "next/image"
+import yexperiments from "../public/yexperiments.svg"
+import yexperience from "../public/yexperience.svg"
 import logo from "../public/experiments.svg"
 import logoEnd from "../public/experiments-end.svg"
 
@@ -9,7 +11,7 @@ function Main(props) {
   return (
     <div className="container">
       <div className="header-box">
-        <div className="title">yexperiments</div>
+        <Image src={yexperiments} />
         <Image src={logo} />
         <div className="links">
           <a href="mailto: yyihui.hu@gmail.com" target="_blank" rel="noreferrer">
@@ -34,7 +36,7 @@ function Main(props) {
         );
       })}
       <div className="footer-box">
-        <div className="title">end of yexperience</div>
+        <Image src={yexperience} />
         <Image src={logoEnd} />
         <div className="links">
           <div>2022 ©</div>
