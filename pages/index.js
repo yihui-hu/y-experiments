@@ -13,7 +13,7 @@ function Main(props) {
   return (
     <>
     <Head>
-      <title>yexperiments</title>
+      <title>y-experiments</title>
     </Head>
     <div className="container">
       <div className="header-box">
