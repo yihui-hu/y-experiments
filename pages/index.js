@@ -70,7 +70,7 @@ export async function getServerSideProps() {
     works.map(async ({ fields }) => {
       return {
         name: fields.Name,
-        image: fields.Attachments[0].thumbnails.large.url,
+        image: fields.Attachments[0].thumbnails.full.url,
         width: fields.Attachments[0].thumbnails.large.width,
         height: fields.Attachments[0].thumbnails.large.height,
       };
