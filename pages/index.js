@@ -61,7 +61,9 @@ export async function getServerSideProps() {
     process.env.AIRTABLE_BASE_ID
   );
   const table = base("Works");
-  let works = await table.select().all(); // get all entries from table
+  let works = await table.select(
+    { sort: [{ field: "ID", direction: "asc" }] }
+  ).all(); // get all entries from table
 
   // convert entries into an array of useful data
   works = await Promise.all(

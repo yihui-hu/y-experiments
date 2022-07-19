@@ -165,7 +165,7 @@ select {
   
   .box {
     display: grid;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     padding: 20px;
     width: calc((100vw - 46px) / 4);
     height: calc((100vw - 46px) / 4);
@@ -178,7 +178,7 @@ select {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     width: calc((100vw - 46px) / 4);
     height: calc((100vw - 46px) / 4);
     padding: 0px 15px 15px 0px;
@@ -188,7 +188,7 @@ select {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     width: calc((100vw - 46px) / 4);
     height: calc((100vw - 46px) / 4);
   }
@@ -216,7 +216,7 @@ select {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     width: calc((100vw - 46px) / 4);
     height: calc((100vw - 46px) / 4);
     padding: 15px 0px 0px 15px;
