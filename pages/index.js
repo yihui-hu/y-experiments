@@ -33,9 +33,6 @@ function Main(props) {
           </a>
         </div>
       </div>
-      {/* <div className="logo-box">
-        <Image src={logo} />
-      </div> */}
       {works.map((work, i) => {
         return (
           <ImageBox key={i} work={work} delay={i}/>
